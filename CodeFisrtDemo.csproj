@@ -57,6 +57,10 @@
     <Compile Include="Migrations\202007121016413_CreatePost.designer.cs">
       <DependentUpon>202007121016413_CreatePost.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007121029441_AddCustomersProdutcsOrders.cs" />
+    <Compile Include="Migrations\202007121029441_AddCustomersProdutcsOrders.designer.cs">
+      <DependentUpon>202007121029441_AddCustomersProdutcsOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202007121016413_CreatePost.resx">
       <DependentUpon>202007121016413_CreatePost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007121029441_AddCustomersProdutcsOrders.resx">
+      <DependentUpon>202007121029441_AddCustomersProdutcsOrders.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

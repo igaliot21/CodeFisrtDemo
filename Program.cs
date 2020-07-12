@@ -19,8 +19,28 @@ namespace CodeFisrtDemo
             this.DatePublished = DateTime.Now;
         }
     }
+    public class Customer {
+        public int Id { get; set; }
+        public int Name { get; set; }
+    }
+    public class Product {
+        public int Id { get; set; }
+        public int Name { get; set; }
+    }
+    public class Order {
+        public int Id { get; set; }
+        public DateTime OrderDate { get; set; }
+        public Customer Customer { get; set; }
+        public int CustomerId { get; set; }
+        public Product Product { get; set; }
+        public int ProductId { get; set; }
+    }
+
     public class BlogDbContext : DbContext { 
         public DbSet<Post> Posts { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
     class Program
     {
